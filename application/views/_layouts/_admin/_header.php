@@ -40,7 +40,7 @@
         <ul class="nav nav-sidebar">
           <li id="welcome"><a href="<?php echo base_url('admin')?>">首頁管理</a></li>
           <li id="product"><a href="<?php echo base_url('admin/product')?>">行李箱管理</a></li>
-          <li id="fit"><a href="<?php echo base_url('admin/fit')?>">配件管理</a></li>
+          <!-- <li id="fit"><a href="<?php echo base_url('admin/fit')?>">配件管理</a></li> -->
           <li id="reserve"><a href="<?php echo base_url('admin/reserve')?>">訂單管理</a></li>
           <li id="notice"><a href="<?php echo base_url('admin/reserve/notice')?>">租借事項</a></li>
           <li id="guest"><a href="<?php echo base_url('admin/guest')?>">留言板管理</a></li>

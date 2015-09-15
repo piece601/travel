@@ -11,5 +11,8 @@ _$(function () {
 			$("[value=<?php echo $value ?>]").attr("checked", true);
 		<?php endforeach ?>	
 	<?php endif ?>
+	<?php if ( isset($fit) ): ?>
+		$("[value=fit]").attr("checked", true);
+	<?php endif ?>
 });
 </script>

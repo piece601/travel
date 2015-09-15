@@ -16,10 +16,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
       <a class="navbar-brand" href="index.html">租趣玩</a>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li id="welcome">
@@ -28,9 +26,9 @@
         <li id="product">
           <a href="<?php echo base_url('product') ?>">行李箱</a>
         </li>
-        <li id="fit">
+        <!-- <li id="fit">
           <a href="<?php echo base_url('fit') ?>">配件</a>
-        </li>
+        </li> -->
         <li id="notice">
           <a href="<?php echo base_url('reserve/notice') ?>">租借事項</a>
         </li>

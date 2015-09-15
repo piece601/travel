@@ -2,7 +2,7 @@
 <div class="row">
 	<div class="box">
 		<div class="col-md-6">
-			<img src="<?php echo base_url($query->path) ?>" alt="" class="img-responsive">
+			<img src="<?php echo base_url($query->path) ?>" alt="" class="img-responsive" onerror="this.src='http://fakeimg.pl/300/?text=^_^'">
 		</div>
 		<div class="col-md-6">
 			<table class="table table-hover">

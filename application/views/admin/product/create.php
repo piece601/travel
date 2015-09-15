@@ -18,11 +18,12 @@
     	<select name="major" class="form-control">
     		<option value="aluminium">鋁鎂合金</option>
     		<option value="polycarbonate">PC聚碳酸酯</option>
+        <option value="fit">配件</option>
     	</select>
     </div>
     <label for="title" class="col-sm-1 control-label">子類</label>
     <div class="col-sm-4">
-    	<select name="minor" class="form-control">
+    	<select name="minor" class="form-control" id="minorBlock">
     	</select>
     </div>
   </div>
@@ -155,6 +156,7 @@
 	var changeMinor = function (major) {
 		$("[name=minor]").empty();
 		if (major == 'aluminium') {
+      $('#minorBlock').show();
 			$.each({
 				Topas: 'TOPAS經典款',
 				CF: 'CF復古款'
@@ -163,7 +165,9 @@
 					$("<option></option>").val(val).html(text)
 				);
 			});
-		} else {
+		};
+    if (major == 'polycarbonate') {
+      $('#minorBlock').show();
 			$.each({
 				SalsaAir: 'Salsa Air系列',
 				Salsa: 'Salsa 系列',
@@ -176,6 +180,9 @@
 				);
 			});
 		};
+    if (major == 'fit') {
+      $('#minorBlock').hide();
+    };
 	};
 	_$(function () {
     $("#product").addClass("active");

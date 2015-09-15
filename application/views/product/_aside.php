@@ -56,7 +56,14 @@
 	  <label>
 	    <input type="checkbox" name="minor[]" value="SalsaSport">Salsa Sport 系列
 	  </label>
-
+	</div>
+	<div class="clearfix" style="margin:20px 0;"></div>
+	<h4>配件</h4>
+	<hr>
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" name="fit" value="fit">全部
+		</label>
 	</div>
 	<hr>
 	<div class="text-center">
