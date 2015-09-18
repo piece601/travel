@@ -39,6 +39,18 @@ class Guest extends MY_Controller {
 		echo '{"code": 1}';
 	}
 
+	public function ajax_delete($guestId = null, $account = null, $password = null)
+	{
+		$this->check_login_ajax($account, $password);
+		$this->output->set_content_type('application/json');
+		$this->load->model('guest_model');
+		if ( ! $this->guest_model->delete_data($guestId) ) {
+			echo '{"code": 0}';
+			return;
+		}
+		echo '{"code": 1}';
+	}
+
 	public function index()
 	{
 		$this->check_login();
