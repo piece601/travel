@@ -39,6 +39,18 @@ class Reserve extends MY_Controller {
 		echo json_encode($query);
 	}
 
+	public function ajax_notice_change_position($account = null, $password = null)
+	{
+		$this->check_login_ajax($account, $password);
+		foreach ($this->input->post('item') as $key => $value) {
+			$this->notice_model->update_data([
+				'noticeId' => $value,
+				'position' => $key+1
+			]);
+		}
+		return;
+	}
+
 	// public function ajax_delete($reserveId)
 	// {
 	// 	$this->output->set_content_type('application/json');
@@ -65,7 +77,7 @@ class Reserve extends MY_Controller {
 	public function notice()
 	{
 		$this->check_login();
-		$query = $this->notice_model->select_all_data();
+		$query = $this->notice_model->select_order_position();
 		$this->load->view('admin/reserve/notice', compact('query'));
 	}
 
@@ -134,6 +146,12 @@ class Reserve extends MY_Controller {
 		]);
 	}
 
+	public function notice_order()
+	{
+		$this->check_login();
+		$query = $this->notice_model->select_order_position();
+		$this->load->view('admin/reserve/notice_order', compact('query'));
+	}
 
 	// public function check($reserveId = null)
 	// {

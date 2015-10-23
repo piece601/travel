@@ -1,0 +1,36 @@
+親愛的遠振資訊用戶 張 夢宸 您好：
+
+
+感謝您選用遠振資訊所提供的服務，您的主機帳號已經開通，相關登入資訊如下： 
+
+
+訂購資訊
+
+主機名稱 : zuquwan.moreward.com 
+主機方案 : USA-GS-S 
+所在主機 : [USA] SP19 (PHP 5.X) ** 如 PHP 版本並非您需要的版本，請與我們聯繫 
+
+DNS 伺服器 ( Name Server ) : 
+ns13.g-dns.com [ 198.55.121.41 ] 
+ns14.g-dns.com [ 198.55.121.42 ] 
+主要網域或是您使用「附加網域」、「網域寄放」的網域，請將 DNS 指向上面兩台 (國際網域通常不需要輸入IP)。
+
+cPanel 主機登入資訊
+
+帳號：zuquwanm 
+密碼：56Mh9mS0bv
+( cPanel 帳號密碼與 FTP 共用 ) 
+
+FTP 位置 : zuquwan.moreward.com  （網頁檔案請務必上傳至 /public_html 資料夾中） 
+cPanel 控制台 : https://sp19.g-dns.com:2083 
+網頁郵件 : https://sp19.g-dns.com:2096 
+
+** 在您的網址 DNS 生效或是 IP 指向成功前，您可以使用以下位置來登入 FTP 或是使用預覽工具來預覽您的網站 
+FTP 位置 : sp19.g-dns.com
+
+Email 設定
+
+POP3 主機 : sp19.g-dns.com 
+SMTP 主機 : sp19.g-dns.com 
+郵件軟體設定說明 
+** 郵件功能在網域名稱註冊前或 DNS 指向生效前，將無法使用。

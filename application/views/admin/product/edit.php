@@ -143,6 +143,12 @@
     </div>
   </div>
   <div class="form-group">
+    <label for="content" class="col-sm-2 control-label">說明</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="description" value="<?php echo $query->description ?>">
+    </div>
+  </div>
+  <div class="form-group">
     <label for="content" class="col-sm-2 control-label">內容</label>
     <div class="col-sm-9">
       <textarea name="content" class="form-control" id="" cols="30" rows="30"><?php echo $query->content ?></textarea>

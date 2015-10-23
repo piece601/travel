@@ -84,9 +84,8 @@ hr {
 .box {
     margin-bottom: 20px;
     padding: 30px 15px;
-    background: #f8f8f8;
-    /*background: #fff;*/
-    /*background: rgba(255,255,255,0.9);*/
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
 .intro-text {
@@ -167,15 +166,12 @@ footer p {
 
     .navbar-default {
         border: none;
-        /*background: #AEDFFB;*/
-        background: rgba(174, 223, 251, 0.65);
-        /*background: #fff;*/
-        /*background: rgba(255,255,255,0.9);*/
+        background: #fff;
+        background: rgba(255,255,255,0.9);
     }
 
     .nav>li>a {
-        /*padding: 35px;*/
-        padding: 15px 35px;
+        padding: 35px;
     }
 
     .navbar-nav>li>a {
@@ -197,11 +193,4 @@ footer p {
         display: table;
         clear: both;
     }
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: black;
-}
-.navbar-default {
-    background: rgba(174, 223, 251, 0.65);
 }

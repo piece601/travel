@@ -58,7 +58,7 @@ class Reserve extends MY_Controller {
 
 	public function notice()
 	{
-		$query = $this->notice_model->select_all_data();
+		$query = $this->notice_model->select_order_position();
 		$this->load->view('reserve/notice', compact('query'));
 	}
 

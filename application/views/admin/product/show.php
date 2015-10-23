@@ -36,6 +36,10 @@
         <td>商品價格</td>
         <td><?php echo $query->price ?></td>
       </tr>
+      <tr>
+        <td>說明</td>
+        <td><?php echo $query->description ?></td>
+      </tr>
     </table>
   </div>
   <div class="clearfix"></div>
