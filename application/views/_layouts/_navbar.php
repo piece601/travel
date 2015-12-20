@@ -26,9 +26,9 @@
         <li id="product">
           <a href="<?php echo base_url('product') ?>">行李箱</a>
         </li>
-        <!-- <li id="fit">
+        <li id="fit">
           <a href="<?php echo base_url('fit') ?>">配件</a>
-        </li> -->
+        </li>
         <li id="notice">
           <a href="<?php echo base_url('reserve/notice') ?>">租借事項</a>
         </li>
