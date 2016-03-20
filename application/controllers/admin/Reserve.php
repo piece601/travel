@@ -117,12 +117,12 @@ class Reserve extends MY_Controller {
 		}
 
 		$data['noticeId'] = $noticeId;
-		if ( ! $this->notice_model->update_data($data) ) {
-			$this->load->view('admin/failure', [
-				'message' => '更新失敗，請再試一次'
-			]);
-			return true;
-		}
+		// if ( ! $this->notice_model->update_data($data) ) {
+		// 	$this->load->view('admin/failure', [
+		// 		'message' => '更新失敗，請再試一次'
+		// 	]);
+		// 	return true;
+		// }
 
 		$this->load->view('admin/success', [
 			'message' => '更新成功',

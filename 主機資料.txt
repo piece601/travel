@@ -34,3 +34,7 @@ POP3 主機 : sp19.g-dns.com
 SMTP 主機 : sp19.g-dns.com 
 郵件軟體設定說明 
 ** 郵件功能在網域名稱註冊前或 DNS 指向生效前，將無法使用。
+
+http://zuquwan.moreward.com/login
+後台帳號 admin
+後台密碼 hew009945

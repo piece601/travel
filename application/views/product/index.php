@@ -1,10 +1,10 @@
 <?php require_once VIEWPATH.'_layouts/_header.php' ?>
 
 <div class="row box">
-	<div class="col-md-2" style="border-right:2px dotted rgb(187, 187,187);">
+	<div class="col-md-3" style="border-right:2px dotted rgb(187, 187,187);">
 		<?php $this->load->view('product/_aside'); ?>
 	</div>
-	<div class="col-md-10">
+	<div class="col-md-9">
 		<?php foreach ($query as $key => $value): ?>
 			<div class="col-md-4">
 				<a href="<?php echo base_url('product/show/'.$value->productId) ?>"><img src="<?php echo base_url($value->path) ?>" class="img-responsive" onerror="this.src='http://fakeimg.pl/300/?text=^_^'"></a>

@@ -17,13 +17,13 @@
 	      <textarea name="content" class="form-control" id="" cols="30" rows="30"><?php echo $query->content ?></textarea>
 	    </div>
 	  </div>
-	  <?php require_once VIEWPATH.'_components/_immupload.php' ?>
 	  <div class="form-group">
 	    <div class="col-sm-offset-2 col-sm-9 text-center">
 	      <input type="submit" class="btn btn-primary btn-lg" value="送出">
 	    </div>
 	  </div>
 	</form>
+	<?php require_once VIEWPATH.'_components/_immupload.php' ?>
 </div>
 <?php require_once VIEWPATH.'_js/_tinymce.php' ?>
 <script>
