@@ -71,6 +71,10 @@ class Product extends MY_Controller {
 			]);
 			return;
 		}
+		// 如果是配件則沒有 minor，所以給空
+		if ( ! isset($data['minor']) ) {
+			$data['minor'] = '';
+		}
 		$this->load->view('admin/success', [
 			'message' => '新增成功',
 			'redirectUrl' => 'admin/product/index/'.$data['major'].'/'.$data['minor']
@@ -110,7 +114,8 @@ class Product extends MY_Controller {
 
 		$this->load->view('admin/success', [
 			'message' => '更新成功',
-			'redirectUrl' => 'admin/product/show/'.$productId
+			// 'redirectUrl' => 'admin/product/show/'.$productId
+			'redirectUrl' => 'admin/product/index/'.$data['major'].'/'.$data['minor']
 		]);
 	}
 
@@ -141,7 +146,7 @@ class Product extends MY_Controller {
 	public function order($major = 'aluminium')
 	{
 		$this->check_login();
-		if ( $major != 'aluminium' && $major != 'polycarbonate') {
+		if ( $major != 'aluminium' && $major != 'polycarbonate' && $major != 'fit') {
 			$this->load->view('admin/failure', [
 				'message' => '查無此分類'
 			]);

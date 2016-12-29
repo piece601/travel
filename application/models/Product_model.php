@@ -25,7 +25,7 @@ class Product_model extends MY_Model {
 		return $query->result();
 	}
 
-	public function select_data_by_minor_in_arr($minor, $in)
+	public function select_data_by_minor_in_arr($minor, $in, $fit)
 	{
 		$this->db->order_by('position', 'asc');
 		if ( $minor != null) {
@@ -35,6 +35,9 @@ class Product_model extends MY_Model {
 		if ( $in != null) {
 			$this->db->or_where_in('in', $in);
 			// $this->db->where_in('in', $in);
+		}
+		if ( $fit != null) {
+			$this->db->or_where_in('major', $fit);
 		}
 		$query = $this->db->get($this->table);
 		return $query->result();

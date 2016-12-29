@@ -17,6 +17,7 @@
 				<td>信箱</td>
 				<td>電話</td>
 				<td>查看</td>
+				<td>刪除</td>	
 			</tr>
 		</table>
 	</div>
@@ -39,6 +40,15 @@
 				};
 			});
 		});
+		// 刪除
+		$("#delete").click(function () {
+			currentId = $(this).attr("data-id");
+			$.get("<?php echo base_url('admin/guest/ajax_delete/') ?>"+'/'+currentId+"<?php echo '/'.$this->session->userdata('account').'/'.$this->session->userdata('password') ?>", function (data) {
+				if ( data.code == 1 ) {
+					$("#"+currentId).addClass("animated bounceOut").delay(500).queue(function () {$(this).remove().dequeue()});
+				};
+			});
+		});
   };
 
 	var insertData = function (counter) {
@@ -58,6 +68,7 @@
 						'<td>'+ data.email +'</td>'+
 						'<td>'+ data.telephone +'</td>'+
 						'<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-id="'+ data.guestId +'">查看</button></td>'+
+						'<td><button type="button" class="btn btn-danger" id="delete" data-id="'+ data.guestId + '">刪除</button></td>'+
 					'</tr>'
 				);
       });

@@ -76,7 +76,7 @@
 		  <div class="form-group">
 			  <label for="content" class="col-sm-3 control-label"></label>
 			  <div class="col-sm-7">
-			  	<div class="g-recaptcha" data-sitekey="6Lf_AwsTAAAAAHjWY_dw3dq2BwZUBj0ZyBOyhA-q"></div>
+			  	<div class="g-recaptcha" data-sitekey="6Lc2jQ8TAAAAAA6_AbWOeUNJdh3pWyeAGpxu8R0Z"></div>
 			  </div>
 		  </div>
 		  

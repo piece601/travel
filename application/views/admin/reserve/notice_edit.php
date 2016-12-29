@@ -23,6 +23,7 @@
 	    </div>
 	  </div>
 	</form>
+	<?php require_once VIEWPATH.'_components/_immupload.php' ?>
 </div>
 <?php require_once VIEWPATH.'_js/_tinymce.php' ?>
 <script>

@@ -31,17 +31,7 @@
 	    <!-- <div class="col-md-8"> -->
 	    	<img src="<?php echo base_url('assets/images/logo_pc.gif') ?>" class="hidden-xs animated bounceInDown" alt="" style="margin:20px auto;display:block; height:150px;">
 	  	<!-- </div> -->
-	    <!-- <div class="col-md-4">
-		    <div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=498825173613036";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-				<div class="fb-page" data-href="https://www.facebook.com/pages/%E4%BA%AB%E7%8E%A9%E6%B4%BE%E5%B0%8D/1066525343362216" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/%E4%BA%AB%E7%8E%A9%E6%B4%BE%E5%B0%8D/1066525343362216"><a href="https://www.facebook.com/pages/%E4%BA%AB%E7%8E%A9%E6%B4%BE%E5%B0%8D/1066525343362216">享玩派對</a></blockquote></div></div>
-	    </div> -->
+	    
 	  </header>
   </div>
   

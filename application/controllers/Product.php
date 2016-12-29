@@ -20,8 +20,9 @@ class Product extends MY_Controller {
 		// var_dump($this->input->get());
 		$minor = $this->input->get('minor');
 		$in = $this->input->get('in');
-		$query = $this->product_model->select_data_by_minor_in_arr($minor, $in);
-		$this->load->view('product/index', compact('query', 'in', 'major', 'minor'));
+		$fit = $this->input->get('fit');
+		$query = $this->product_model->select_data_by_minor_in_arr($minor, $in, $fit);
+		$this->load->view('product/index', compact('query', 'in', 'major', 'minor', 'fit'));
 	}
 
 	public function show($productId = null)

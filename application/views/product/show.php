@@ -2,7 +2,7 @@
 <div class="row">
 	<div class="box">
 		<div class="col-md-6">
-			<img src="<?php echo base_url($query->path) ?>" alt="" class="img-responsive">
+			<img src="<?php echo base_url($query->path) ?>" alt="" class="img-responsive" onerror="this.src='http://fakeimg.pl/300/?text=^_^'">
 		</div>
 		<div class="col-md-6">
 			<table class="table table-hover">
@@ -29,6 +29,10 @@
 	      <tr>
 	        <td>商品價格</td>
 	        <td><?php echo $query->price ?></td>
+	      </tr>
+	      <tr>
+	      	<td>說明</td>
+	      	<td><?php echo $query->description?></td>
 	      </tr>
 	    </table>
 		</div>

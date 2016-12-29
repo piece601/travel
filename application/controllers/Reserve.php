@@ -32,7 +32,7 @@ class Reserve extends MY_Controller {
 			return true;
 		}
 		$output = $this->check_recaptcha(
-			'6Lf_AwsTAAAAAC9Wv0FwUb8B2h6dQ4Tg5xos_CeN',
+			'6Lc2jQ8TAAAAAIAh-DR5s9chLoITi9uZj8J3FaI7',
 			$this->input->post('g-recaptcha-response'),
 			$_SERVER['REMOTE_ADDR']
 		);
@@ -58,7 +58,7 @@ class Reserve extends MY_Controller {
 
 	public function notice()
 	{
-		$query = $this->notice_model->select_all_data();
+		$query = $this->notice_model->select_order_position();
 		$this->load->view('reserve/notice', compact('query'));
 	}
 

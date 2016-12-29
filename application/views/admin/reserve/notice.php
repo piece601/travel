@@ -3,7 +3,11 @@
 	租借事項
   <p class="lead"></p>
 </h1>
-<a href="<?php echo base_url('admin/reserve/notice_create') ?>" class="btn btn-primary btn-lg pull-right">新增</a>
+<div class="pull-right">
+	<a href="<?php echo base_url('admin/reserve/notice_order') ?>" class="btn btn-success btn-lg">排序</a>
+	<a href="<?php echo base_url('admin/reserve/notice_create') ?>" class="btn btn-primary btn-lg">新增</a>	
+</div>
+
 <div class="clearfix" style="margin: 10px 0"></div>
 <div class="row placeholders">
 	<?php foreach ($query as $key => $value): ?>

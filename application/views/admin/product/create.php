@@ -18,11 +18,12 @@
     	<select name="major" class="form-control">
     		<option value="aluminium">鋁鎂合金</option>
     		<option value="polycarbonate">PC聚碳酸酯</option>
+        <option value="fit">配件</option>
     	</select>
     </div>
     <label for="title" class="col-sm-1 control-label">子類</label>
     <div class="col-sm-4">
-    	<select name="minor" class="form-control">
+    	<select name="minor" class="form-control" id="minorBlock">
     	</select>
     </div>
   </div>
@@ -136,6 +137,12 @@
     </div>
   </div>
   <div class="form-group">
+    <label for="content" class="col-sm-2 control-label">說明</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="description">
+    </div>
+  </div>
+  <div class="form-group">
     <label for="content" class="col-sm-2 control-label">內容</label>
     <div class="col-sm-9">
       <textarea name="content" class="form-control" id="" cols="30" rows="30"></textarea>
@@ -155,6 +162,7 @@
 	var changeMinor = function (major) {
 		$("[name=minor]").empty();
 		if (major == 'aluminium') {
+      $('#minorBlock').show();
 			$.each({
 				Topas: 'TOPAS經典款',
 				CF: 'CF復古款'
@@ -163,7 +171,9 @@
 					$("<option></option>").val(val).html(text)
 				);
 			});
-		} else {
+		};
+    if (major == 'polycarbonate') {
+      $('#minorBlock').show();
 			$.each({
 				SalsaAir: 'Salsa Air系列',
 				Salsa: 'Salsa 系列',
@@ -176,6 +186,9 @@
 				);
 			});
 		};
+    if (major == 'fit') {
+      $('#minorBlock').hide();
+    };
 	};
 	_$(function () {
     $("#product").addClass("active");
